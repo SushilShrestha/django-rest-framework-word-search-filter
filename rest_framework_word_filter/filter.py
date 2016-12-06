@@ -25,7 +25,7 @@ class FullWordSearchFilter(BaseFilterBackend):
         return ["{}__icontains".format(field_name),
                 "{}__istartswith".format(field_name),
                 "{}__iendswith".format(field_name),
-                "{}__exact".format(field_name),
+                "{}__iexact".format(field_name),
                 "{}__istartswith".format(field_name),
                 "{}__iendswith".format(field_name),
                 "{}__icontains".format(field_name),
